@@ -1,10 +1,40 @@
-table, td, tr {
+{
 	border: 1px solid black;
+}
+
+table{
+}
+.column{
+	float: left;
+	padding: 10px;
+	border: 3px solid black;
+}
+.row{
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  border: 3px solid black;
 }
 
 .left{
 	width: 75%;
+	
 }
+
 .right{
 	width: 25%;
+}
+
+.post{
+	height: 150px;
+	border: 3px solid black;
+	padding: 3px;
+	margin: 10px;
+	border-style: solid;
 }
