@@ -7,16 +7,19 @@
 <body>
 
 <a href="">Home</a> | <a href="">About Me</a> | <a href="">Contact Me</a> <div align="right"><a href="" align="right">Login</a></div>
+
+<!--This container includes two tables side by side-->
 <div>
-	<table class="column">
+	<!--Left table, includes the blog text-->
+	<table class="column left">
 		<tr>
-			<th style="width:70%"><h1>This is my blog</h1></th>
+			<td><h1>This is my blog</h1></td>
 		</tr>
 		<tr>
-			<td>
+			<td style="width:70%">
 				<div class="post">
 					<h3>Blog post #1</h3>
-					<p>My first <b>blog post</b> is all about my blog post and how to write a new post in my blog, you can find it <a href="">here</a></p>
+					<p>My <b>first blog post</b> is all about my <span style="color:red">blog post</span> and how to write a new post in my blog, you can find it <a href="">here</a></p>
 					<div class="box"></div>
 					<div class="note"><p>Published 1 days ago by Israel</p></div>
 				</div>
@@ -35,11 +38,14 @@
 			</td>
 		</tr>
 	</table>
+	
+	<!--Right table, includes the list of the latest and popular blogs-->
 	<table  class="column right">
 		<tr>
-			<th><h1>Latest</h1></th>
+			<td style="width:30%"><h1>Latest</h1></td>
 		</tr>
-		<tr><td>
+		<tr>
+			<td>
 				<div>
 					<p>Blog post #1 <a href="">go to page</a></p>
 				</div>
@@ -48,9 +54,13 @@
 				</div>
 				<div>
 					<p>Blog post #3 <a href="">go to page</a></p>
-				</div></td></tr>
-			<tr><th><h1>Popular</h1></th></tr>
-			<tr><td>
+				</div>
+			</td>
+		</tr>
+		<tr><td><hr size="2" noshade></td></tr>
+		<tr><td ><h1>Popular</h1></td></tr>
+		<tr>
+			<td>
 				<div>
 					<p>Blog post #3 <a href="">go to page</a></p>
 				</div>
@@ -59,8 +69,9 @@
 				</div>
 				<div>
 					<p>Blog post #2 <a href="">go to page</a></p>
-				</div></td>
-			</tr>
+				</div>
+			</td>
+		</tr>
 	</table>
 </div>
 </body>
