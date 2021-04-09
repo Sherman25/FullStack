@@ -1,34 +1,13 @@
-{
-	border: 1px solid black;
-}
-
-table{
+.note {
+	position: absolute;
+	bottom: 0; 
 }
 .column{
-	float: left;
-	padding: 10px;
-	border: 3px solid black;
-}
-.row{
-  margin-left:-5px;
-  margin-right:-5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  border: 3px solid black;
-}
-
-.left{
-	width: 75%;
-	
+	display: inline-block;
 }
 
 .right{
-	width: 25%;
+	position: absolute;
 }
 
 .post{
@@ -37,4 +16,33 @@ table{
 	padding: 3px;
 	margin: 10px;
 	border-style: solid;
+	position: relative;
+	left: -10px;
+}
+
+.box{
+	border:3px solid gray;
+	width:56px;
+	height:56px;
+	position:absolute;
+	top: 3px;
+	right: 5px;
+}
+
+.box:before{
+	content:"";
+	position:absolute;
+	border-top:2px solid black;
+	width:80px;
+	transform: rotate(45deg);
+	transform-origin: 0% 0%;
+}
+
+.box:after{
+	content:"";
+	position:absolute;
+	border-top:2px solid black;
+	width:80px;
+	transform: translateX(56px) rotate(135deg) ;
+	transform-origin: 0% 0%;
 }
