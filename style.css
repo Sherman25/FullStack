@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .note {
 	position: absolute;
 	bottom: 0; 
@@ -6,12 +10,15 @@
 	display: inline-block;
 }
 
+.left {
+	//width: 70%;
+}
 .right{
 	position: absolute;
 }
 
 .post{
-	height: 150px;
+	height: 200px;
 	border: 3px solid black;
 	padding: 3px;
 	margin: 10px;
@@ -21,7 +28,7 @@
 }
 
 .box{
-	border:3px solid gray;
+	border:3px solid black;
 	width:56px;
 	height:56px;
 	position:absolute;
@@ -32,17 +39,17 @@
 .box:before{
 	content:"";
 	position:absolute;
-	border-top:2px solid black;
-	width:80px;
-	transform: rotate(45deg);
+	border-top:2px solid gray;
+	width:74px;
+	transform: translateX(2px) translateY(1px) rotate(45deg);
 	transform-origin: 0% 0%;
 }
 
 .box:after{
 	content:"";
 	position:absolute;
-	border-top:2px solid black;
-	width:80px;
-	transform: translateX(56px) rotate(135deg) ;
+	border-top:2px solid gray;
+	width:74px;
+	transform: translateX(55px) translateY(2px) rotate(135deg) ;
 	transform-origin: 0% 0%;
 }
