@@ -11,8 +11,9 @@ class Weather extends React.Component{
     }
 
     componentDidMount() {
+        //debugger;
         const city = this.state.city;
-        const key = '65751608b5672692bc1684b34f74c76b';
+        const key = process.env.REACT_APP_WEATHER_API_KEY;
         const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${key}`;
         axios.get(url).then(response => {
           console.log(response);
