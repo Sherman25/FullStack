@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import {Header, MainSection, SideBar} from "../";
 
 class App extends React.Component{
     constructor(props){
