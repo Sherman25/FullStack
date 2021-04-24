@@ -1,0 +1,8 @@
+.flex-gap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main {
+    width: 66.7%;
+}
