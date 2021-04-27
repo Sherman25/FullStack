@@ -13,4 +13,10 @@ const Posts = [
             author: ""}
 ]
 
-export default Posts;
+const getPostById = (id) => {
+    return(
+        Posts[id - 1]
+    );
+}
+
+export default getPostById;

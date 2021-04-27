@@ -46,16 +46,8 @@ function App () {
                     <Route path="/login">
                         <Login />
                     </Route>
-                    <Route path="/post1">
-                        <Post post={Posts[0]} />
-                        <SideBar />
-                    </Route>
-                    <Route path="/post2">
-                        <Post post={Posts[1]} />
-                        <SideBar />
-                    </Route>
-                    <Route path="/post3">
-                        <Post post={Posts[2]} />
+                    <Route path="/post/:id">
+                        <Post />
                         <SideBar />
                     </Route>
                     <Route path="/">
