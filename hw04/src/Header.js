@@ -1,24 +1,27 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch, Link, Redirect} from 'react-router-dom';
-import AboutMe from "./AboutMe";
 
 function Header() {
-
     return(
-        <Router>
-            <div>
+            <div class="flex-gap">
                 <ul>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/about">About Me</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact">Contact Me</Link>
+                    </li>
+                    <li>
+                        <Link to="/new_post">New Post Page</Link>
+                    </li>
+                    <li>
+                        <Link to="/login">Login</Link>
                     </li>
                 </ul>
-                <Switch>
-                    <Route path="/about">
-                        <AboutMe />
-                    </Route>
-                </Switch>
             </div>
-        </Router>
     );
 }
 

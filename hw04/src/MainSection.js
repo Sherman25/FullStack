@@ -1,20 +1,17 @@
 import React, {useState} from 'react';
-import Posts from './Posts';
+import getAllPosts from './Posts';
 import Post from './Post';
 import './MainSection.css';
 
-const MainSection = (props) => {
-    const listItems = Posts.map((postItem) => (
-       <Post key={postItem.id} post={postItem}/>
-    ));
+function mainSection() {
     return(
         <div>
             <header>
                 <h1>This is my blog</h1>
             </header>
-            {listItems}
+            <getAllPosts />
         </div>
     );
 }
 
-export default MainSection;
+export default mainSection;

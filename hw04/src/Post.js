@@ -2,8 +2,9 @@ import {useParams} from "react-router";
 import getPostById from "./Posts";
 
 const Post = (props) => {
-    let {id} = useParams();
-    const post = getPostById(id);
+    //let {id} = useParams();
+    //const post = getPostById(id);
+    const {post} = props;
     return (
         <div class="post-border">
             <h1>{post.title}</h1>
