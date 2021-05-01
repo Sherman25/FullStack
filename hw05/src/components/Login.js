@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import CustomInput from './CustomInput';
 import Button from './Button';
 import './Login.css';
+import { Link } from '@material-ui/core';
 
 class Login extends React.Component {
     state = {
@@ -15,7 +16,6 @@ class Login extends React.Component {
     render() {
         return (
             <dev>
-                Login page
                 <form className="form">
                     <CustomInput
                         labelText="Email"
@@ -39,6 +39,14 @@ class Login extends React.Component {
                     <Button type="button" color="primary" className="form__custom-button">
                         Log in
                     </Button>
+                    <Link
+                    component="button"
+                    variant="body1"
+                    onCLick={()=>{
+                        console.info("Forgot username/password");
+                    }}>
+                        Forgot username/password
+                    </Link>
                 </form>
             </dev>
         );
